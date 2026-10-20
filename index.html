@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,537 +8,106 @@
     <title>Mi autobiografía</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            background-color: #f1f5f9;
-            color: #263238;
-            line-height: 1.8;
+            background-color: #eaf2f8;
+            color: #333;
+            margin: 0;
         }
 
         header {
-            background: linear-gradient(135deg, #172554, #2563eb);
+            background-color: #2874a6;
             color: white;
             text-align: center;
-            padding: 60px 20px;
-        }
-
-        header h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        nav {
-            background-color: #111827;
-            text-align: center;
-            padding: 15px;
-            position: sticky;
-            top: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 8px;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #93c5fd;
-        }
-
-        main {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
+            padding: 30px;
         }
 
         section {
             background-color: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px #00000010;
-            scroll-margin-top: 80px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
         }
 
         h2 {
-            color: #1d4ed8;
-            border-bottom: 2px solid #dbeafe;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            color: #1e40af;
-            margin-top: 18px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        .presentacion {
-            text-align: center;
-        }
-
-        .foto-perfil {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #dbeafe;
-            margin-bottom: 20px;
-        }
-
-        .datos {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-
-        .dato {
-            background-color: #eff6ff;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        .dato strong {
-            display: block;
-            color: #1d4ed8;
-        }
-
-        .evento {
-            border-left: 4px solid #3b82f6;
-            padding-left: 20px;
-            margin: 25px 0;
-        }
-
-        .galeria {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-
-        .galeria figure {
-            text-align: center;
-            background: #f8fafc;
-            padding: 10px;
-            border-radius: 8px;
-        }
-
-        .galeria img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 6px;
-        }
-
-        figcaption {
-            padding: 8px;
-        }
-
-        ul {
-            padding-left: 25px;
-        }
-
-        .frase {
-            background-color: #eff6ff;
-            border-left: 5px solid #2563eb;
-            padding: 20px;
-            font-style: italic;
+            color: #2874a6;
         }
 
         footer {
-            background-color: #111827;
+            background-color: #2874a6;
             color: white;
             text-align: center;
-            padding: 25px;
-        }
-
-        footer a {
-            color: #93c5fd;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 30px;
-            }
-
-            section {
-                padding: 20px;
-            }
-
-            .datos,
-            .galeria {
-                grid-template-columns: 1fr;
-            }
+            padding: 15px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- PORTADA -->
-    <header id="inicio">
+    <!-- Título principal -->
+    <header>
         <h1>Mi autobiografía</h1>
         <p>[Tu nombre completo]</p>
-        <p>[Una frase que represente tu vida]</p>
     </header>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav>
-        <a href="#presentacion">Presentación</a>
-        <a href="#datos">Datos personales</a>
-        <a href="#infancia">Infancia</a>
-        <a href="#familia">Familia</a>
-        <a href="#educacion">Educación</a>
-        <a href="#experiencias">Experiencias</a>
-        <a href="#logros">Logros</a>
-        <a href="#valores">Valores</a>
-        <a href="#metas">Metas</a>
-        <a href="#galeria">Galería</a>
-    </nav>
+    <!-- Presentación personal -->
+    <section>
+        <h2>¿Quién soy?</h2>
+        <p>
+            Mi nombre es [Tu nombre], tengo [Tu edad] años
+            y nací en [Lugar de nacimiento].
+            Actualmente vivo en [Tu ciudad].
+        </p>
+    </section>
 
-    <main>
+    <!-- Datos personales -->
+    <section>
+        <h2>Mi familia</h2>
+        <p>
+            Mi familia está formada por [Integrantes de tu familia].
+            Ellos son importantes para mí porque [Razón].
+        </p>
+    </section>
 
-        <!-- PRESENTACIÓN -->
-        <section id="presentacion" class="presentacion">
-            <h2>¿Quién soy?</h2>
+    <!-- Estudios -->
+    <section>
+        <h2>Mis estudios</h2>
+        <p>
+            Actualmente estudio en [Nombre de tu institución].
+            Mi materia favorita es [Materia] porque [Razón].
+        </p>
+    </section>
 
-            <img src="foto-perfil.jpg"
-                 alt="Mi fotografía personal"
-                 class="foto-perfil">
+    <!-- Gustos y pasatiempos -->
+    <section>
+        <h2>Mis gustos y pasatiempos</h2>
+        <p>
+            Me gusta [Tus gustos y pasatiempos].
+            En mi tiempo libre disfruto [Actividad favorita].
+        </p>
+    </section>
 
-            <p>
-                Mi nombre es [Tu nombre completo], tengo [Tu edad] años
-                y nací el [Fecha de nacimiento] en [Lugar de nacimiento].
-                Actualmente vivo en [Lugar de residencia].
-            </p>
+    <!-- Metas -->
+    <section>
+        <h2>Mis metas para el futuro</h2>
+        <p>
+            En el futuro quiero [Tu sueño o profesión].
+            Para conseguirlo, me esforzaré y aprenderé cada día.
+        </p>
+    </section>
 
-            <p>
-                Me considero una persona [Tus cualidades].
-                Mis principales intereses son [Tus pasatiempos].
-                En esta autobiografía compartiré los momentos y
-                experiencias más importantes de mi vida.
-            </p>
-        </section>
+    <!-- Reflexión final -->
+    <section>
+        <h2>Mi reflexión</h2>
+        <p>
+            Mi vida está llena de experiencias y aprendizajes.
+            Quiero seguir creciendo como persona y cumplir mis sueños.
+        </p>
+    </section>
 
-        <!-- DATOS PERSONALES -->
-        <section id="datos">
-            <h2>Mis datos personales</h2>
-
-            <div class="datos">
-                <div class="dato">
-                    <strong>Nombre completo</strong>
-                    [Tu nombre]
-                </div>
-
-                <div class="dato">
-                    <strong>Fecha de nacimiento</strong>
-                    [Tu fecha de nacimiento]
-                </div>
-
-                <div class="dato">
-                    <strong>Lugar de nacimiento</strong>
-                    [Ciudad y país]
-                </div>
-
-                <div class="dato">
-                    <strong>Edad</strong>
-                    [Tu edad]
-                </div>
-
-                <div class="dato">
-                    <strong>Nacionalidad</strong>
-                    [Tu nacionalidad]
-                </div>
-
-                <div class="dato">
-                    <strong>Ocupación</strong>
-                    [Tu ocupación actual]
-                </div>
-
-                <div class="dato">
-                    <strong>Institución educativa</strong>
-                    [Nombre de tu institución]
-                </div>
-
-                <div class="dato">
-                    <strong>Pasatiempos</strong>
-                    [Tus actividades favoritas]
-                </div>
-            </div>
-        </section>
-
-        <!-- INFANCIA -->
-        <section id="infancia">
-            <h2>Mi nacimiento e infancia</h2>
-
-            <h3>Mi nacimiento</h3>
-            <p>
-                Nací el [Fecha] en [Lugar].
-                Según me han contado, [Una anécdota sobre tu nacimiento].
-            </p>
-
-            <h3>Mis primeros años</h3>
-            <p>
-                Durante mi infancia viví en [Lugar].
-                Recuerdo que disfrutaba [Juegos y actividades].
-                Una experiencia que recuerdo con cariño es [Recuerdo].
-            </p>
-
-            <h3>Mis aprendizajes</h3>
-            <p>
-                En esta etapa aprendí [Lecciones importantes],
-                que contribuyeron a formar mi personalidad.
-            </p>
-        </section>
-
-        <!-- FAMILIA -->
-        <section id="familia">
-            <h2>Mi familia</h2>
-
-            <p>
-                Mi familia está conformada por [Integrantes de tu familia].
-                Ellos son importantes para mí porque [Razones].
-            </p>
-
-            <h3>Mis padres o cuidadores</h3>
-            <p>
-                [Describe a tus padres o cuidadores y lo que has aprendido
-                de ellos.]
-            </p>
-
-            <h3>Mis hermanos y familiares</h3>
-            <p>
-                [Describe a tus hermanos y otros familiares importantes.]
-            </p>
-
-            <h3>La importancia de mi familia</h3>
-            <p>
-                Mi familia me ha enseñado valores como [Valores].
-                Uno de mis recuerdos familiares favoritos es [Recuerdo].
-            </p>
-        </section>
-
-        <!-- EDUCACIÓN -->
-        <section id="educacion">
-            <h2>Mi trayectoria educativa</h2>
-
-            <p>
-                Mi educación ha sido importante para mi crecimiento.
-                En cada etapa he adquirido conocimientos y experiencias.
-            </p>
-
-            <div class="evento">
-                <h3>Educación inicial</h3>
-                <p>Institución: [Nombre].</p>
-                <p>Recuerdos: [Experiencias de esta etapa].</p>
-            </div>
-
-            <div class="evento">
-                <h3>Educación primaria</h3>
-                <p>Institución: [Nombre de la escuela].</p>
-                <p>Aprendizajes: [Lo que aprendiste].</p>
-            </div>
-
-            <div class="evento">
-                <h3>Educación secundaria</h3>
-                <p>Institución: [Nombre del colegio].</p>
-                <p>Experiencias: [Momentos importantes].</p>
-            </div>
-
-            <div class="evento">
-                <h3>Educación actual o superior</h3>
-                <p>Institución: [Nombre].</p>
-                <p>Curso o carrera: [Información].</p>
-            </div>
-        </section>
-
-        <!-- EXPERIENCIAS -->
-        <section id="experiencias">
-            <h2>Experiencias importantes de mi vida</h2>
-
-            <h3>Un momento que marcó mi vida</h3>
-            <p>
-                [Describe un acontecimiento importante y explica
-                por qué fue significativo para ti.]
-            </p>
-
-            <h3>Un desafío que superé</h3>
-            <p>
-                [Describe una dificultad y cómo lograste superarla.]
-            </p>
-
-            <h3>Personas que han influido en mí</h3>
-            <p>
-                [Escribe sobre las personas que te han ayudado
-                a crecer y aprender.]
-            </p>
-        </section>
-
-        <!-- LOGROS -->
-        <section id="logros">
-            <h2>Mis logros y aprendizajes</h2>
-
-            <h3>Logros académicos</h3>
-            <ul>
-                <li>[Un logro académico].</li>
-                <li>[Un reconocimiento].</li>
-                <li>[Una habilidad adquirida].</li>
-            </ul>
-
-            <h3>Logros personales</h3>
-            <ul>
-                <li>[Una meta alcanzada].</li>
-                <li>[Una dificultad superada].</li>
-                <li>[Un cambio positivo].</li>
-            </ul>
-
-            <h3>Lo que he aprendido</h3>
-            <p>
-                Una de las lecciones más importantes de mi vida ha sido
-                [Lección aprendida y su importancia].
-            </p>
-        </section>
-
-        <!-- VALORES -->
-        <section id="valores">
-            <h2>Mis valores y mi personalidad</h2>
-
-            <h3>¿Cómo me describo?</h3>
-            <p>
-                Me considero una persona [Cualidades].
-                Mis fortalezas son [Fortalezas] y deseo mejorar en
-                [Aspectos por mejorar].
-            </p>
-
-            <h3>Mis valores principales</h3>
-            <ul>
-                <li><strong>Respeto:</strong> [Qué significa para ti].</li>
-                <li><strong>Responsabilidad:</strong> [Cómo la practicas].</li>
-                <li><strong>Honestidad:</strong> [Por qué es importante].</li>
-                <li><strong>Solidaridad:</strong> [Cómo ayudas a otros].</li>
-                <li><strong>Perseverancia:</strong> [Cómo sigues adelante].</li>
-            </ul>
-
-            <h3>Mis gustos e intereses</h3>
-            <p>
-                Me gusta [Tus gustos y pasatiempos] porque [Razones].
-            </p>
-        </section>
-
-        <!-- METAS -->
-        <section id="metas">
-            <h2>Mis sueños y metas para el futuro</h2>
-
-            <h3>Metas a corto plazo</h3>
-            <p>[Lo que deseas conseguir próximamente].</p>
-
-            <h3>Metas a mediano plazo</h3>
-            <p>[Lo que deseas alcanzar en los próximos años].</p>
-
-            <h3>Metas a largo plazo</h3>
-            <p>[Tus objetivos personales, académicos y profesionales].</p>
-
-            <h3>La persona que quiero llegar a ser</h3>
-            <p>
-                En el futuro quiero ser [Cómo deseas ser].
-                Para lograrlo, me esforzaré en [Tus acciones].
-            </p>
-        </section>
-
-        <!-- GALERÍA -->
-        <section id="galeria">
-            <h2>Galería de mi vida</h2>
-
-            <p>
-                Estas fotografías representan momentos especiales
-                de mi historia personal.
-            </p>
-
-            <div class="galeria">
-                <figure>
-                    <img src="foto1.jpg"
-                         alt="Fotografía de mi infancia"
-                         loading="lazy">
-                    <figcaption>[Recuerdo de mi infancia]</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="foto2.jpg"
-                         alt="Fotografía familiar"
-                         loading="lazy">
-                    <figcaption>[Un momento con mi familia]</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="foto3.jpg"
-                         alt="Fotografía de mis estudios"
-                         loading="lazy">
-                    <figcaption>[Un recuerdo escolar]</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="foto4.jpg"
-                         alt="Fotografía de un momento especial"
-                         loading="lazy">
-                    <figcaption>[Otro momento importante]</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <!-- REFLEXIÓN FINAL -->
-        <section id="reflexion">
-            <h2>Mi reflexión personal</h2>
-
-            <p>
-                Al recordar mi historia, comprendo que cada experiencia
-                ha contribuido a formar la persona que soy hoy.
-                Los momentos felices y las dificultades me han permitido
-                aprender y crecer.
-            </p>
-
-            <p>
-                [Escribe tu reflexión personal sobre tu vida y
-                los aprendizajes que te llevas.]
-            </p>
-
-            <div class="frase">
-                "[Escribe una frase que represente tu vida]"
-            </div>
-        </section>
-
-        <!-- AGRADECIMIENTOS -->
-        <section id="agradecimientos">
-            <h2>Mis agradecimientos</h2>
-
-            <p>
-                Agradezco a [Personas importantes] por su apoyo,
-                cariño y enseñanzas durante las diferentes etapas
-                de mi vida.
-            </p>
-        </section>
-
-    </main>
-
-    <!-- PIE DE PÁGINA -->
+    <!-- Pie de página -->
     <footer>
-        <p>Autobiografía de [Tu nombre completo]</p>
-        <p>Año: [Año actual]</p>
-        <p><a href="#inicio">Volver al inicio</a></p>
-        <p>© [Año] - Mi historia personal</p>
+        <p>© 2026 - Autobiografía de [Tu nombre]</p>
     </footer>
 
 </body>
